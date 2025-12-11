@@ -1,0 +1,29 @@
+brew update
+brew install mysql
+brew services start mysql
+
+mysqladmin -u root -p version
+
+mysql -u root -p
+
+
+show databases;
+create database name;
+use name;
+show tables;
+create table name(
+id int,
+name varchar(255)
+);
+
+
+describe name;
+insert into name values (1, "name");
+select * from name;
+
+select * from tablename where name = "atharv";
+
+select * from tablename where name = "atharv" or name name = "atharvm";
+
+select name from tablename where age < 22;
+left 19:20
