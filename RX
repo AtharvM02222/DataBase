@@ -8,9 +8,13 @@ mysql -u root -p
 
 
 show databases;
+
 create database name;
+
 use name;
+
 show tables;
+
 create table name(
 id int,
 name varchar(255)
@@ -21,9 +25,25 @@ describe name;
 insert into name values (1, "name");
 select * from name;
 
-select * from tablename where name = "atharv";
+select id from tablename where name = "atharv";
 
-select * from tablename where name = "atharv" or name name = "atharvm";
+select id from tablename where name = "atharv" or name = "atharvm";
 
 select name from tablename where age < 22;
-left 19:20
+
+select id from tablename where not name = "atharv";
+
+
+delete from tablename where name = "atharv";
+
+update tablename set email = NULL where name = "atharv";
+
+
+select * from tablename order by age asc;
+
+select * from tablename order by age desc;
+
+
+alter table tablename add phone_number int;
+
+update tablename set phone_number = 1234567890 where name = "atharv";
