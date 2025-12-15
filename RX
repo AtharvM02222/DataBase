@@ -25,25 +25,25 @@ describe name;
 insert into name values (1, "name");
 select * from name;
 
-select id from tablename where name = "atharv";
+select id from RX where name = "Atharv Mandlavdiya";
 
-select id from tablename where name = "atharv" or name = "atharvm";
+select id from RX where name = "Atharv Mandlavdiya" or name = "atharv";
 
-select name from tablename where age < 22;
+select name from RX where age < 22;
 
-select id from tablename where not name = "atharv";
-
-
-delete from tablename where name = "atharv";
-
-update tablename set email = NULL where name = "atharv";
+select id from RX where not name = "Atharv Mandlavdiya";
 
 
-select * from tablename order by age asc;
+delete from RX where name = "Atharv Mandlavdiya";
 
-select * from tablename order by age desc;
+update RX set email = NULL where name = "Atharv Mandlavdiya";
 
 
-alter table tablename add phone_number int;
+select * from RX order by age asc;
 
-update tablename set phone_number = 1234567890 where name = "atharv";
+select * from RX order by age desc;
+
+
+alter table RX add phone_number varchar(15);
+
+update RX set phone_number = "99931-00837" where name = "Atharv Mandlavdiya";
