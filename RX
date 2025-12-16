@@ -6,6 +6,7 @@ mysqladmin -u root -p version
 
 mysql -u root -p
 
+use brycxizr5tfdlzufdy1x
 
 show databases;
 
