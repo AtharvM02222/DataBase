@@ -48,3 +48,8 @@ select * from RX order by age desc;
 alter table RX add phone_number varchar(15);
 
 update RX set phone_number = "99931-00837" where name = "Atharv Mandlavdiya";
+
+
+ALTER TABLE RX
+MODIFY phone_number VARCHAR(20) AFTER email,
+MODIFY joined_date DATE AFTER phone_number;
