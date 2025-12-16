@@ -1,3 +1,5 @@
+use brycxizr5tfdlzufdy1x;
+
 brew update
 brew install mysql
 brew services start mysql
@@ -5,8 +7,6 @@ brew services start mysql
 mysqladmin -u root -p version
 
 mysql -u root -p
-
-use brycxizr5tfdlzufdy1x;
 
 show databases;
 
