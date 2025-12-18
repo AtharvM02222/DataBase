@@ -53,3 +53,26 @@ update RX set phone_number = "99931-00837" where name = "Atharv Mandlavdiya";
 ALTER TABLE RX
 MODIFY phone_number VARCHAR(20) AFTER email,
 MODIFY joined_date DATE AFTER phone_number;
+
+
+SELECT role, COUNT(*) AS total_members
+FROM members
+GROUP BY role;
+
+SELECT * 
+FROM members
+ORDER BY id;
+
+SELECT * 
+FROM members
+ORDER BY role;
+
+
+SELECT id, name, role
+FROM members;
+
+
+SELECT * 
+FROM members
+WHERE name LIKE '%Atharv%';
+
